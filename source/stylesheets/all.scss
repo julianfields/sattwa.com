@@ -1,15 +1,19 @@
 /* compass stuff*/
 @import "compass";
 @import "compass/css3";
+@import "compass/layout/sticky-footer";
 
 /* color font texture variables */
 @import "palette";
 
-/* stylesheet imports (frameworks */
+/* stylesheet imports (frameworks) */
 @import "normalize";
 @import "base";
 @import "skeleton";
 @import "layout";
+
+// for sticky footer
+@include sticky-footer(100px, "#wrapper", "#wrapper-footer", "#footer");
 
 body {
   background: $body-bg;
