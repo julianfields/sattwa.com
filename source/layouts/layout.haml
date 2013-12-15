@@ -6,8 +6,9 @@
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
     / Use title if it's in the page YAML frontmatter
     %title= current_page.data.title || "Sattwa Chai"
-    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic", "normalize", "all"
-    = javascript_include_tag  "all"
+    = stylesheet_link_tag "all"
+    = javascript_include_tag  "//use.typekit.net/sta5box.js","all"
+    %script(type="text/javascript") try{Typekit.load();}catch(e){}
   
   %body{:class => page_classes}
     #wrapper
@@ -18,12 +19,18 @@
       .container
         .row
           .sixteen.columns
+            %copy &copy; 1995 Sattwa Enterprises
+            .contact-info
+              = link_to "http://www.facebook.com/business/dashboard/#/pages/Sattwa-Chai/85861821645", class: "facebook" do
+                = image_tag "/images/fb-logo.png"
+                facebook
+              = link_to  "https://twitter.com/SattwaChai", class: "twitter" do
+                = image_tag "/images/tw-logo.png"
+                twitter
+              = link_to "mailto:sales@sattwa.com", class: "mail" do
+                = image_tag "/images/email-letter-icon.jpg"
+                contact us
+              503.538.4715
+            .policies
             = link_to "privacy policy", "/privacy-policy"
             = link_to "return policy", "/return-policy"
-            = link_to "facebook", "http://www.facebook.com/business/dashboard/#/pages/Sattwa-Chai/85861821645"
-            = link_to "twitter", "https://twitter.com/SattwaChai"
-            %copy &copy; 1995 Sattwa Enterprises
-            = mail_to "sales@sattwa.com", "contact us"
-            503.538.4715
-           
- 

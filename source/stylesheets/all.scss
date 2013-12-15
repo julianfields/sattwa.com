@@ -21,7 +21,7 @@ body {
 
 .hero {
   text-align: center;
-  background: black url(/images/tea-garden.jpg) center center no-repeat;
+  background: black url(/images/tg-hero.jpg) center center no-repeat;
   padding: 20px 0;
   text-shadow: 1px 1px 2px #000;
   @include background-size(cover);
@@ -37,6 +37,13 @@ body {
       background: transparent url(/images/sattwachai-logo.png) 0 0 no-repeat;
       @include background-size(100%);
       margin: 0 auto;
+    }
+  }
+  ol {
+    text-align: left;
+    font-size: 28px;
+    li {
+      line-height: 1.2;
     }
   }
 }
@@ -58,8 +65,50 @@ header {
   }
 }
 
+.chai-aside {
+  text-align: center;
+  p {
+    font-size: 12px;
+    color: #848484;
+    margin-bottom: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.button {
+  background-color: #38a800;
+  color: #fff;
+  @include box-shadow(-2px 1px 1px #848484);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 footer {
   background: $footer-bg;
   padding: 15px 15px;
   text-align: center;
+  a {
+    text-decoration: none;
+    &.twitter, &.facebook, &.mail {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 1;
+      font-family: sans-serif;
+      color: #333;
+      padding: 5px;
+      @include border-radius(3px);
+      @include background(linear-gradient(#ebebeb, #ccc));
+      border: 1px solid #999;
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 18px;
+      }
+    }
+  }
 }
