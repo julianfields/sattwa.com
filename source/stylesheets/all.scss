@@ -19,6 +19,40 @@ body {
   background: $body-bg;
 }
 
+table {
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+  tr {
+    padding: 10px 0;
+    border-bottom: 1px solid #ebebeb;
+    &:nth-child(even) {
+      background: #f7f7f7;
+    }
+  }
+  td {
+    padding: 5px;
+    &.order {
+      text-align: right;
+      padding: 10px;
+      .button {
+        margin-left: 10px;
+        padding: 5px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.small-hero {
+  background: black url(/images/tg-hero.jpg) center -590px no-repeat;
+  @include background-size(cover);
+  height: 100px;
+  margin: 0;
+  .index & {
+    display: none;
+  }
+}
+
 .hero {
   text-align: center;
   background: black url(/images/tg-hero.jpg) center center no-repeat;
@@ -62,6 +96,9 @@ header {
     &:hover {
       background: #333;
     }
+  }
+  .row {
+    margin: 0;
   }
 }
 
