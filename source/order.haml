@@ -1,37 +1,60 @@
 = partial "nav"
 .container
   .row
-    .sixteen.columns
+    .ten.columns
       :markdown
-        Traditional Chai Concentrate
+        ## Traditional Chai Concentrate
 
         Micro-brewed with 100% organic spices and organic fair trade certified tea. Packaged in half-gallon bottles for food service and quart bottles for retail sales. 
-        
-        171N - Case of Half Gallons (6 per case) - $74.50
-      
-        Order »
-       
-        181N - Case of Quarts (12 per case) - $79.80
 
-        Order »
-       
-        172N - Half Gallon Bottle - $12.55
+      %table
+        %tbody
+          %tr
+            %td 171N - Case of Half Gallons (6 per case)
+            %td.order
+              $74.50 
+              = link_to "Order", "#", class: "button"
+          %tr
+            %td 181N - Case of Quarts (12 per case)
+            %td.order
+              $79.80
+              = link_to "Order", "#", class: "button"
+          %tr
+            %td 172N - Half Gallon Bottle
+            %td.order
+              $12.55
+              = link_to "Order", "#", class: "button"
+          %tr
+            %td 182N - Quart Bottle
+            %td.order
+              $6.81
+              = link_to "Order", "#", class: "button"
 
-        Order »
-       
-        182N - Quart Bottle - $6.81
-
-        Order »
-        
-
-        Sattwa Sun Chai
+    .six.columns.chai-aside
+      = link_to "http://www.chai-direct.com/+/SATTWA+CHAI+TEA+LIQUID/TRADITIONAL" do
+        %p  32oz 64oz organic chai concentrate
+        %p= image_tag "/images/chai_containers.jpg"
+  .row
+    .ten.columns
+      :markdown
+        ## Sattwa Sun Chai
 
         Exquisitely blended using Organic Fair Trade Certified Black Tea, and organic spices of cardamom, cinnamon, ginger, black pepper and cloves, Sattwa Sun is the finest, tastiest, masala chai on the market. Sattwa Sun is a cup of pure love dedicated to serious chai drinkers around the world! Fifty great servings per bag.
 
-        301N - One 10oz bag of Sattwa Sun - $15.00
+      %table
+        %tbody
+          %tr
+            %td 301N - One 10oz bag of Sattwa Sun
+            %td.order
+              $15.00 
+              = link_to "Order", "#", class: "button"
+          %tr
+            %td 325N - One 5 lb box of Sattwa Sun
+            %td.order
+              $88.00
+              = link_to "Order", "#", class: "button"
 
-        Order »
-
-        325N - One 5 lb box of Sattwa Sun - $88.00
-
-        Order »
+    .six.columns.chai-aside
+      = link_to "http://www.chai-direct.com/+/SATTWA+CHAI+TEA+BREW/SUN-CHAI" do
+        %p 10oz bag 5lb box organic chai mix
+        %p= image_tag "/images/sun_chai.jpg"
