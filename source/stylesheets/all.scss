@@ -82,10 +82,24 @@ table {
   }
 }
 
+%active-nav {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-width: 10px;
+  border-color: transparent transparent #fff transparent;
+  border-style: solid;
+  margin-left: -10px;
+  left: 50%;
+  bottom: 0;
+}
+
 header {
   text-align: center;
   background: $header-bg;
   a {
+    @include transition(all .2s);
     color: #fff;
     text-decoration: none;
     font-family: helvetica, sans-serif;
@@ -93,8 +107,51 @@ header {
     text-transform: uppercase;
     display: inline-block;
     padding: 25px 15px;
+    position: relative;
     &:hover {
-      background: #333;
+      background: rgba(255,255,255,0.1);
+    }
+    .index &.home, .our-story &.our-story, .order &.order {
+      &:hover {
+        background: none;
+      }
+    }
+    .index &.home {
+      &:after {
+        @extend %active-nav;
+        text-decoration: none;
+      }
+    }
+    .our-story &.our-story, .order &.order {
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 10px;
+        left: 10px;
+        bottom: 20px;
+        background: rgba(255,255,255,0.35);
+        height: 2px;
+        @include border-radius(2px);
+      }
+    }
+    .our-story &, .order & {
+      &.home {
+        position: absolute;
+        text-indent: -999em;
+        overflow: hidden;
+        background: transparent url(/images/sattwachai-logo.png) 0 0 no-repeat;
+        @include background-size(100%);
+        width: 100px;
+        height: 100px;
+        top: 10px;
+      }
+      &.our-story {
+        margin-left: -145px;
+      }
+      &.order {
+        margin-left: 150px;
+      }
     }
   }
   .row {
