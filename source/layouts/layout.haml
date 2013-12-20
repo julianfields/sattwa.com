@@ -9,7 +9,7 @@
     = stylesheet_link_tag "all"
     = javascript_include_tag  "//use.typekit.net/sta5box.js","all"
     %script(type="text/javascript") try{Typekit.load();}catch(e){}
-  
+
   %body{:class => page_classes}
     #wrapper
       = yield
@@ -19,7 +19,7 @@
       .container
         .row
           .sixteen.columns
-            %copy &copy; 1995 Sattwa Enterprises
+            %copy &copy; 1995 Sattwa Enterprises - 503.538.4715
             .contact-info
               = link_to "http://www.facebook.com/business/dashboard/#/pages/Sattwa-Chai/85861821645", class: "facebook" do
                 = image_tag "/images/fb-logo.png"
@@ -30,7 +30,6 @@
               = link_to "mailto:sales@sattwa.com", class: "mail" do
                 = image_tag "/images/email-letter-icon.jpg"
                 contact us
-              503.538.4715
             .policies
-            = link_to "privacy policy", "/privacy-policy"
-            = link_to "return policy", "/return-policy"
+              = link_to "privacy policy", "/privacy-policy"
+              = link_to "return policy", "/return-policy"

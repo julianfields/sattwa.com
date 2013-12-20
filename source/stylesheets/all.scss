@@ -165,6 +165,9 @@ header {
     font-size: 12px;
     color: #848484;
     margin-bottom: 0;
+    .order & {
+      margin-top: 20px;
+    }
   }
   a {
     text-decoration: none;
@@ -186,6 +189,14 @@ footer {
   background: $footer-bg;
   padding: 15px 15px;
   text-align: center;
+  .contact-info {
+    margin-top: 10px;
+  }
+  .policies a {
+    color: #444;
+    font-size: 13px;
+    margin: 5px;
+  }
   a {
     text-decoration: none;
     &.twitter, &.facebook, &.mail {
