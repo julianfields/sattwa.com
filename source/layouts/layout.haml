@@ -18,9 +18,14 @@
     %footer#footer
       .container
         .row
-          .sixteen.columns
+          .eight.columns
+            = image_tag "/images/ft-logo.png", class: "ft-logo"
             %copy &copy; 1995 Sattwa Enterprises - 503.538.4715
-            .contact-info
+            .policies
+              = link_to "privacy policy", "/privacy-policy"
+              = link_to "return policy", "/return-policy"
+          .eight.columns
+            .contact-info.right
               = link_to "http://www.facebook.com/business/dashboard/#/pages/Sattwa-Chai/85861821645", class: "facebook" do
                 = image_tag "/images/fb-logo.png"
                 facebook
@@ -30,6 +35,3 @@
               = link_to "mailto:sales@sattwa.com", class: "mail" do
                 = image_tag "/images/email-letter-icon.jpg"
                 contact us
-            .policies
-              = link_to "privacy policy", "/privacy-policy"
-              = link_to "return policy", "/return-policy"

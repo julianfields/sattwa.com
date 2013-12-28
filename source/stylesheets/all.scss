@@ -188,7 +188,6 @@ header {
 footer {
   background: $footer-bg;
   padding: 15px 15px;
-  text-align: center;
   .contact-info {
     margin-top: 10px;
   }
@@ -216,4 +215,14 @@ footer {
       }
     }
   }
+}
+
+.ft-logo {
+  float: left;
+  margin-right: 20px;
+  width: 75px;
+}
+
+.right {
+  text-align: right;
 }
