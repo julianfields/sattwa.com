@@ -157,6 +157,11 @@ header {
   .row {
     margin: 0;
   }
+  @media #{$small-only} {
+    a {
+      font-size: 14px;
+    }
+  }
 }
 
 .chai-aside {
