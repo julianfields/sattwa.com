@@ -19,7 +19,6 @@
       .container
         .row
           .sixteen.columns
-            %copy &copy; 1995 Sattwa Enterprises - 503.538.4715
             .contact-info
               = link_to "http://www.facebook.com/business/dashboard/#/pages/Sattwa-Chai/85861821645", class: "facebook" do
                 = image_tag "/images/fb-logo.png"
@@ -28,8 +27,10 @@
                 = image_tag "/images/tw-logo.png"
                 twitter
               = link_to "mailto:sales@sattwa.com", class: "mail" do
-                = image_tag "/images/email-letter-icon.jpg"
+                = image_tag "/images/mail.png"
                 contact us
             .policies
+              .copyright
+                %copy &copy; 1995 Sattwa Enterprises - 503.538.4715
               = link_to "privacy policy", "/privacy-policy"
               = link_to "return policy", "/return-policy"
