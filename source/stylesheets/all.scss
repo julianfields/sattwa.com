@@ -44,7 +44,7 @@ table {
 }
 
 .small-hero {
-  background: black url(/images/tg-hero.jpg) center -590px no-repeat;
+  background: black url(/images/tg-hero.jpg) center bottom no-repeat;
   @include background-size(cover);
   height: 100px;
   margin: 0;
