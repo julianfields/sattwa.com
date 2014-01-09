@@ -76,8 +76,32 @@ table {
   ol {
     text-align: left;
     font-size: 28px;
+    list-style-type: none;
     li {
       line-height: 1.2;
+      position: relative;
+      &:before {
+        content: '';
+        display: inline-block;
+        background: transparent url(/images/cup-and-hand.png) 0 0 no-repeat;
+        vertical-align: middle;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 5px;
+        left: -30px;
+        @include background-size(100%);
+      }
+    }
+  }
+  @media #{$small-only} {
+    h1 a.logo {
+      height: 150px;
+      width: 150px;
+      @include background-size(100%);
+    }
+    h2 ol {
+      font-size: 24px;
     }
   }
 }
