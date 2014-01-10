@@ -4,33 +4,37 @@
     %meta{:charset => "utf-8"}/
     / Always force latest IE rendering engine or request Chrome Frame
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta{name: 'viewport', content: 'width=device-width'}
     / Use title if it's in the page YAML frontmatter
     %title= current_page.data.title || "Sattwa Chai"
     = stylesheet_link_tag "all"
-    = javascript_include_tag  "//use.typekit.net/sta5box.js","all"
+    = javascript_include_tag  "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js", "//use.typekit.net/sta5box.js","all"
     %script(type="text/javascript") try{Typekit.load();}catch(e){}
 
   %body{:class => page_classes}
+    = link_to "☰", "#sidr", class: "mobile-nav-link"
+    #sidr.sidr
+      %ul
+        %li= link_to "home", "/"
+        %li= link_to "our story", "/our-story"
+        %li= link_to "order", "/order"
     #wrapper
       = yield
-      #wrapper-footer
 
-    %footer#footer
+    %footer
       .container
         .row
-          .sixteen.columns
-            .contact-info
-              = link_to "http://www.facebook.com/business/dashboard/#/pages/Sattwa-Chai/85861821645", class: "facebook" do
-                = image_tag "/images/fb-logo.png"
-                facebook
-              = link_to  "https://twitter.com/SattwaChai", class: "twitter" do
-                = image_tag "/images/tw-logo.png"
-                twitter
-              = link_to "mailto:sales@sattwa.com", class: "mail" do
-                = image_tag "/images/mail.png"
-                contact us
+          .eight.columns
+            = link_to "http://fairtradeusa.org" do
+              = image_tag "/images/ft-logo.png", class: "fair-trade-logo", alt: "Fair Trade Logo"
+            .call-us
+              Call Us 503.538.4715
             .policies
-              .copyright
-                %copy &copy; 1995 Sattwa Enterprises - 503.538.4715
+              &copy; 1995 Sattwa Enterprises
               = link_to "privacy policy", "/privacy-policy"
               = link_to "return policy", "/return-policy"
+          .eight.columns
+            .contact-info
+              = link_to "", "http://www.facebook.com/business/dashboard/#/pages/Sattwa-Chai/85861821645", class: "foundicon-facebook", title: "find us on facebook"
+              = link_to  "", "https://twitter.com/SattwaChai", class: "foundicon-twitter", title: "follow us on twitter"
+              = link_to "", "mailto:sales@sattwa.com", class: "foundicon-mail", title: "contact us"
