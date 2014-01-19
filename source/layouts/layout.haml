@@ -11,6 +11,9 @@
     = javascript_include_tag  "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js", "//use.typekit.net/sta5box.js","all"
     %script(type="text/javascript") try{Typekit.load();}catch(e){}
 
+    %meta{:name => "description", :content => current_page.data.description || "Sattwa Chai, the tea that stirs the maker. As an original pioneer in the tea category, Sattwa has remained true to its roots and initial vision. Still family owned and operated, we love the rich spiritual heritage of India and authentic masala chai. Sattwa Chai is marketed to coffee roasters and cafes all over North America. Sattwa: a sanskrit word depicting the universal life force of balance and harmony."}
+    %meta{:name => "keywords", :content => current_page.data.keywords || "Sattwa Chai, the tea that stirs the maker. As an original pioneer in the tea category, Sattwa has remained true to its roots and initial vision. Still family owned and operated, we love the rich spiritual heritage of India and authentic masala chai. Sattwa Chai is marketed to coffee roasters and cafes all over North America. Sattwa: a sanskrit word depicting the universal life force of balance and harmony."}
+
   %body{:class => page_classes}
     = link_to "☰", "#sidr", class: "mobile-nav-link"
     #sidr.sidr
