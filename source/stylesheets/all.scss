@@ -161,7 +161,7 @@ header {
         @include border-radius(2px);
       }
     }
-    .our-story &, .order & {
+    .our-story &, .order &, .privacy-policy &, .return-policy & {
       &.home {
         position: absolute;
         text-indent: -999em;
@@ -296,6 +296,19 @@ footer {
   }
 }
 
+.banner {
+  background: $header-bg;
+  padding: 25px 0;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-family: "minion-pro";
+  color: #fff;
+  .row {
+    margin: 0;
+  }
+}
+
 img {
   max-width: 100%;
 }
@@ -305,3 +318,4 @@ img {
     padding-top: 25px;
   }
 }
+
