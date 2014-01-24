@@ -8,6 +8,7 @@ gem "middleman", "~>3.1.4"
 gem "haml", "~>4.0.4"
 gem "rack-contrib"
 gem "puma"
+gem "middleman-google-analytics", "~> 0.0.3"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"

@@ -6,4 +6,4 @@ bundle
 
 bundle exec middleman build
 
-s3cmd sync tmp/ s3://production-sattwachai.com/
+s3cmd sync tmp/ s3://sattwachai.com/

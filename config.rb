@@ -55,13 +55,23 @@ set :images_dir, 'images'
 
 set :build_dir, "tmp"
 
+# Activate google-analytics extension
+configure :development do
+  activate :google_analytics do |ga|
+    ga.tracking_id = false
+  end
+end
 # Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :google_analytics do |ga|
+    ga.tracking_id = 'UA-10933996-5'
+  end
 
-  # Minify Javascript on build
-  # activate :minify_javascript
+  # For example, change the Compass output style for deployment
+   activate :minify_css
+
+   #Minify Javascript on build
+   activate :minify_javascript
 
   # Enable cache buster
   # activate :asset_hash
