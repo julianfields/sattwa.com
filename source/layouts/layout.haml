@@ -8,6 +8,7 @@
     %meta{name: "google-site-verification", content: "oru63Fev7jMN6fvhYLQ6UxT7EvW8jRKg2YwZJIGhCnc"}
     / Use title if it's in the page YAML frontmatter
     %title= current_page.data.title || "Sattwa Chai"
+    %link(rel='shortcut icon' type='image/x-icon' href='/favicon.ico')
     = stylesheet_link_tag "all"
     = javascript_include_tag  "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js", "//use.typekit.net/sta5box.js","all"
     %script(type="text/javascript") try{Typekit.load();}catch(e){}
