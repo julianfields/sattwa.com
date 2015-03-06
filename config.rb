@@ -61,6 +61,12 @@ configure :development do
     ga.tracking_id = false
   end
 end
+
+activate :blog do |blog|
+  blog.prefix = "blog"
+  blog.layout = "blog-layout"
+  # set options on blog
+end
 # Build-specific configuration
 configure :build do
   activate :google_analytics do |ga|

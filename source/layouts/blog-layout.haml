@@ -25,7 +25,12 @@
         %li= link_to "order", "/order"
         %li= link_to "blog", "/blog"
     #wrapper
-      = yield
+      = partial "nav"
+      .container
+        .row
+          .sixteen.columns
+            %h2.page-title= current_article.title
+            = yield
 
     .banner
       .row
