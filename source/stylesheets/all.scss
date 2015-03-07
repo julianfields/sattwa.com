@@ -176,7 +176,7 @@ header {
         width: 100px;
         height: 100px;
         top: 10px;
-        left: 0;
+        left: 10px;
         display: block;
       }
     }
@@ -317,7 +317,7 @@ footer {
   @media #{$small-only} {
     display: block;
     position: absolute;
-    right: 23px;
+    right: 25px;
     top: 23px;
     color: rgba(255,255,255,0.4);
     text-decoration: none;
