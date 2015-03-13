@@ -1,6 +1,6 @@
 ---
 title: Somayag
-date: 03-08-2015
+date: 2015-03-08
 ---
 
 

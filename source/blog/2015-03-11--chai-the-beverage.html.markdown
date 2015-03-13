@@ -1,6 +1,6 @@
 ---
 title: Chai The Beverage
-date: 03-11-2015
+date: 2015-03-11
 ---
 We heard once that Chai is the second most commonly used word in the world, behind “okay.”   
 
