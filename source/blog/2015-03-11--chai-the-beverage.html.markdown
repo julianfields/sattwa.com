@@ -2,8 +2,7 @@
 title: Chai The Beverage
 date: 2015-03-11
 ---
-We heard once that Chai is the second most commonly used word in the world, behind “okay.”   
-Chai means tea, and tea is a universal beverage.  When we talk in this country about a Chai 
+We heard once that Chai is the second most commonly used word in the world, behind “okay." Chai means tea, and tea is a universal beverage.  When we talk in this country about a Chai 
 Tea Latte, we are being redundant.    More accurately we would say Chai Latte.  Tea with milk.  To be even more accurate we would say Masala Chai Latte.  Masala means spices.  Not every culture puts spices Chai (tea).
 
 In 1995 Chai was a foreign beverage in the US market.  So, many of us were educating, and the education took many different directions just as the Chai products took diverse directions.  The interesting thing about Chai is that it can be made in many different ways.  In India, each family has its own recipe, and those can vary dramatically from family to family and region to region.
