@@ -153,7 +153,7 @@ header {
         text-decoration: none;
       }
     }
-    .our-story &.our-story, .order &.order, .blog &.blog{
+    .our-story &.our-story, .order &.order, .blog &.blog {
       &:after {
         content: "";
         display: block;
